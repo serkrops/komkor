@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <h1>Hello content!</h1>
+    <div className="w-full max-w-xl min-h-screen">content</div>
   )
 }

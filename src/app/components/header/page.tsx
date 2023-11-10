@@ -6,8 +6,10 @@ export const Header = () => {
     return (
         <div className="flex flex-col items-center justify-center w-full">
             <div className="flex flex-col gap-y-4 md:flex-row md:justify-between w-screen max-w-screen-xl mx-5 px-10 py-5 text-black border-b-2 border-solid border-blue-400 items-center">
-                <div className="flex flex-col justify-center gap-y-4 text-center">
-                    <Image src={logo} width={200} height={100} alt="komkor" className="hover:scale-110 duration-500 cursor-pointer" />
+                <div id="head" className="flex flex-col justify-center gap-y-4 text-center">
+                    <Link href="/">
+                        <Image src={logo} width={200} height={100} alt="komkor" className="hover:scale-110 duration-500 cursor-pointer" />
+                    </Link>
                     <span className="font-bold text-2xl">Зручний сервіс</span>
                 </div>
                 <div className="flex flex-col md:flex-row gap-y-4 md:gap-4 text-center items-center">
