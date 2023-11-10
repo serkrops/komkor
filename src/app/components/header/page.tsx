@@ -1,5 +1,6 @@
 import Image from "next/image"
 import logo from "./../../logo.png";
+import Link from "next/link";
 
 export const Header = () => {
     return (
@@ -25,10 +26,10 @@ export const Header = () => {
                 </div>
             </div>
             <nav className="flex flex-col gap-y-4 items-center md:flex-row md:justify-around text-2xl font-bold p-4 w-screen max-w-screen-xl">
-                <a href="#" className="md:hover:scale-110 duration-500 cursor-pointer">Послуги</a>
-                <a href="#" className="md:hover:scale-110 duration-500 cursor-pointer">Чому ми?</a>
-                <a href="#" className="md:hover:scale-110 duration-500 cursor-pointer">Ціни</a>
-                <a href="#" className="md:hover:scale-110 duration-500 cursor-pointer">Зворотній зв'язок</a>
+                <Link href="/" className="md:hover:scale-110 duration-500 cursor-pointer">Послуги</Link>
+                <Link href="/about" className="md:hover:scale-110 duration-500 cursor-pointer">Чому ми?</Link>
+                <Link href="/prices" className="md:hover:scale-110 duration-500 cursor-pointer">Ціни</Link>
+                <Link href="/feedback" className="md:hover:scale-110 duration-500 cursor-pointer">Зворотній зв'язок</Link>
             </nav>
         </div>
     )
